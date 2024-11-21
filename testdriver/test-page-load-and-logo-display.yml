@@ -1,0 +1,34 @@
+version: 4.1.27
+steps:
+  - prompt: Focus the browser window.
+    commands: []
+  - prompt: Assert that the webpage loads successfully.
+    commands:
+      - command: assert
+        expect: the webpage did not load successfully
+  - prompt: Assert that the webpage loads successfully.
+    commands:
+      - command: assert
+        expect: the webpage did not load successfully
+  - prompt: Assert that the webpage loads successfully.
+    commands:
+      - command: assert
+        expect: the webpage did not load successfully
+  - prompt: Assert that the webpage loads successfully.
+    commands:
+      - command: assert
+        expect: the webpage did not load successfully
+  - prompt: Assert that the webpage loads successfully.
+    commands:
+      - command: assert
+        expect: the webpage did not load successfully
+  - prompt: Assert that the webpage loads successfully.
+    commands:
+      - command: assert
+        expect: the webpage did not load successfully
+  - prompt: >-
+      Assert that the Cloudflare Access logo is displayed.  # Use the content of
+      the file from the environment
+    commands:
+      - command: assert
+        expect: the Cloudflare Access logo is displayed
