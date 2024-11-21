@@ -1,0 +1,14 @@
+version: 4.1.27
+steps:
+  - prompt: Focus the browser window.
+    commands: []
+  - prompt: Assert that the "Forbidden" error message is displayed.
+    commands:
+      - command: assert
+        expect: the "Forbidden" error message is displayed
+  - prompt: >-
+      Assert that instructions to contact the system administrator are visible. 
+      # Use the content of the file from the environment
+    commands:
+      - command: assert
+        expect: instructions to contact the system administrator are visible
