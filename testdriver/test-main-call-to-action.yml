@@ -1,0 +1,20 @@
+version: 4.1.27
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: Assert that there is a visible call to action on the page.
+    commands:
+      - command: assert
+        expect: there is a visible "View details" button on the page
+  - prompt: >-
+      Click the call to action and assert it triggers the expected behavior.  #
+      Use the content of the file from the environment
+    commands:
+      - command: hover-text
+        text: View details
+        description: button to view more information
+        action: click
+      - command: assert
+        expect: the expected behavior is triggered after clicking the button
