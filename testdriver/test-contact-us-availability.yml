@@ -1,0 +1,18 @@
+version: 4.1.27
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: Locate any "Contact Us" link or information.
+    commands:
+      - command: hover-text
+        text: contact your system administrator
+        description: contact information in the forbidden message
+        action: hover
+  - prompt: >-
+      Assert that contact details or a link to contact support are available.  #
+      Use the content of the file from the environment
+    commands:
+      - command: assert
+        expect: contact details are available in the forbidden message
